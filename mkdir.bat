@@ -1,0 +1,2 @@
+if not exist "C:\Users\%username%\Documents\cfghub" mkdir "C:\Users\%username%\Documents\cfghub"
+if not exist "C:\Users\%username%\Documents\cfghub\cfghub.dat" type nul > "C:\Users\%username%\Documents\cfghub\cfghub.dat"
