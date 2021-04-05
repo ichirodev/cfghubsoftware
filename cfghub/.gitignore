@@ -360,3 +360,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Google Drive API documents
+.credentials/drive-dotnet-quickstart.json
+credentials.json

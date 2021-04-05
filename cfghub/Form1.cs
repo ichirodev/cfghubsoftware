@@ -268,6 +268,18 @@ namespace cfghub
          */
         private void ButtonOpenFolder_Click(object sender, EventArgs e)
         {
+            foreach (ListViewItem myListItem in LVFolders.SelectedItems)
+            {
+                foreach (CfgFolder cfgFolderIterator in CFGList)
+                {
+                    if (cfgFolderIterator.Get("directory") == myListItem.SubItems[2].Text)
+                    {
+                        string currentPath = @"";
+                        currentPath += myListItem.SubItems[2].Text;
+                        System.Diagnostics.Process.Start("explorer.exe", currentPath);
+                    }
+                }
+            }
         }
 
         private void LVFolders_SelectedIndexChanged(object sender, EventArgs e)
